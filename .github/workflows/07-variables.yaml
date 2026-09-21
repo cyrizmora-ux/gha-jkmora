@@ -11,6 +11,8 @@ env:
 jobs:
     echo:
         runs-on: ubuntu-latest
+        environment:
+            name: prod
         env:
             job_var: 'blow job variable'
         steps:
