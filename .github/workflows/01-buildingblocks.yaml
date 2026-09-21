@@ -10,9 +10,9 @@ jobs:
     printgoodbye:
         runs-on: ubuntu-latest
         steps:
-          - name: Failed step
-            run: |
-               echo "Goodbye, this is another GitHub Actions workflow!"
-               exit 1
+ #        - name: Failed step
+ #          run: |
+ #             echo "Goodbye, this is another GitHub Actions workflow!"
+ #             exit 1
           - name: Goodbyes message
             run: echo "babushka"
