@@ -3,6 +3,7 @@ name: 07 using variables
 on:
   push:
   workflow_dispatch:
+  
 
 env:
     workflow_var: 'Hello workflow variable'
@@ -32,7 +33,6 @@ jobs:
                 echo "REPO VAR : ${{ vars.REPO_VAL }}"
     echo3:
         runs-on: ubuntu-latest
-        environment: prod
         steps:
         - name: 'print variables'
           run : |
