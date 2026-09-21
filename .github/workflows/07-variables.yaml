@@ -28,8 +28,7 @@ jobs:
         steps:
         - name: 'print variables'
           run : |
-                echo "ORG_VAL: ${{ vars.ORG_VAL }}"
-                echo "ORG_OVERWRITTENV VAR : ${{ vars.ORG_OVERWRITTEN_VAR }}"
+                echo "ORG_OVERWRITTENV VAR : ${{ vars.OVERWRITTEN_VAR }}"
                 echo "REPO VAR : ${{ vars.REPO_VAL }}"
     echo3:
         runs-on: ubuntu-latest
@@ -37,7 +36,6 @@ jobs:
         steps:
         - name: 'print variables'
           run : |
-                echo "ORG_VAL: ${{ vars.ORG_VAL }}"
-                echo "ORG_OVERWRITTENV VAR : ${{ vars.ORG_OVERWRITTEN_VAR }}"
+                echo "ORG_OVERWRITTENV VAR : ${{ vars.OVERWRITTEN_VAR }}"
                 echo "REPO VAR : ${{ vars.REPO_VAL }}"
                 echo "ENV VAR : ${{ vars.TARGET_VAR }}"
