@@ -1,12 +1,12 @@
 
 name: 03 - Using Actions
 
-on: [push, workflow_dispatch]
+on: [workflow_dispatch]
 
 
 jobs:
     build:
-     runs-on: ubuntu-latest
+     runs-on: ubuntu-lates
      defaults:
         run:
           working-directory: 03-using actions/react-app
