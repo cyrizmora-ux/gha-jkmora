@@ -16,7 +16,8 @@ jobs:
                 echo "Event: ${{ github.event_name }}"
                 echo "Repository: ${{ github.repository }}"
                 echo "Actor: ${{ github.actor }}"
-                echo "SHA: ${{ github.event.workflow.name }}"
+                echo "Workflow: ${{ github.workflow }}"
+                echo "Run ID: ${{ github.run_id }}"
      
           - name: Show variables
             run: |
