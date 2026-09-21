@@ -1,4 +1,5 @@
 name: 06 expressions
+run-name: 06 expressions | DEBUG ${{inputs.debug && 'ON' || 'OFF' }}
 
 on:
   push:
@@ -6,7 +7,7 @@ on:
     inputs:
       debug:
         description: 'Debug mode'
-        type: boolean
+        type: boolean  
         default: false
 
 jobs:
