@@ -22,4 +22,7 @@ jobs:
             if: ${{ inputs.debug && github.ref == 'refs/heads/main' }}
             run: |
               echo "triggered by ${{ github.ref}} and ${{ github.ref_name}}"
- 
+
+          - name: 'message'
+            run: |
+              echo "Heelllooooo"
