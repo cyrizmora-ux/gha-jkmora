@@ -1,0 +1,18 @@
+name: 01 building blocks
+on: push
+
+jobs:
+    printhello:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Print message
+            run: echo "Hello, this is a GitHub Actions workflow!"
+    printgoodbye:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Failed step
+            run: |
+               echo "Goodbye, this is another GitHub Actions workflow!"
+               exit 1
+          - name: Goodbyes message
+            run: echo "babushka"
