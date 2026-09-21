@@ -19,8 +19,12 @@ jobs:
                 echo "Workflow: ${{ github.workflow }}"
                 echo "Run ID: ${{ github.run_id }}"
      
-          - name: Show variables
+          - name: Show environment variables
             run: |
                 echo "${{ env.APP_NAME }}"
                 echo "${{ env.NODE_VERSION }}"
                             
+          - name: Variables from vars
+            run: |
+                echo "Workflow name: ${{ vars.MY_VAR}}"
+                echo "Workflow name: ${{ vars.APP_NAME}}"
