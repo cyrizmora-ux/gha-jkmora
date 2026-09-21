@@ -1,0 +1,17 @@
+
+name: 04A - Using Filters Activity
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        Steps:
+            runs: echo "running is whenever a PR is opened,  or synchronized"
+
+          
