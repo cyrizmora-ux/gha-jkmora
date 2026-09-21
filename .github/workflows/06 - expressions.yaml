@@ -1,11 +1,12 @@
 name: 06 expressions
+run-name: 06 expressions | DEBUG ${{inputs.debug && 'ON' || 'OFF' }}
 
 on:
   workflow_dispatch:
     inputs:
       debug:
         description: 'Debug mode'
-        type: boolean
+        type: boolean  
         default: false
 
 jobs:
