@@ -12,6 +12,8 @@ on:
 jobs:
     echo:
         runs-on: ubuntu-latest
+        environment:
+            name: production
         steps:
           - name: 'print debug input'
             if: ${{ inputs.debug }}
