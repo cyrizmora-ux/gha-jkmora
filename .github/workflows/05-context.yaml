@@ -26,5 +26,5 @@ jobs:
                             
           - name: Variables from vars
             run: |
-                echo "Workflow name: ${{ vars.MY_VAR}}"
-                echo "Workflow name: ${{ vars.APP_NAME}}"
+                echo "vars1: ${{ vars.MY_VAR}}"
+                echo "vars2 ${{ vars.APP_NAME}}"
